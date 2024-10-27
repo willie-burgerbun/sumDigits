@@ -1,22 +1,22 @@
- import java.util.Scanner;
+ import java.util.Scanner; //Use scanner to accept input from the user
 
-    public class Main {
+    public class Main { //Declare main
       public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter an integer: ");
-        long number = scanner.nextLong();  // Prompts user to enter a number
+        long number = scanner.nextLong();  // Prompt the user to enter a number
 
-        int sum = sumDigits(number); // Computes sum of digits
-        System.out.println("Sum of digits: " + sum); // Displays result
+        int sum = sumDigits(number); // Compute the sum of digits
+        System.out.println("Sum of digits: " + sum); // Display the result
 
-        scanner.close(); // Closes the scanner
+        scanner.close(); // Close the scanner
       }
 
       public static int sumDigits(long n) {
         int sum = 0;
         while (n != 0) {
-          sum += n % 10; // Extracts the last digit
-          n /= 10;       // Removes the last digit
+          sum += n % 10; // Extract the last digit
+          n /= 10;       // Remove the last digit
         }
         return sum;
       }
