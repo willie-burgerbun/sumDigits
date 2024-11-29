@@ -17,6 +17,6 @@
         while (n != 0) {
           sum += n % 10; // Extract the last digit
           n /= 10;       // Remove the last digit
-        }
-        return sum;
       }
+        return sum;
+ }
